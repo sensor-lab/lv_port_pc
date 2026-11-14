@@ -77,7 +77,7 @@ if(USE_FREERTOS)
     list(APPEND MAIN_SOURCES src/freertos_main.c src/freertos/freertos_posix_port.c ${FREERTOS_SOURCES})
     list(APPEND MAIN_LIBS freertos_config freertos_kernel)
 else()
-    list(APPEND MAIN_SOURCES src/main.c)
+    list(APPEND MAIN_SOURCES src/main.c src/sourcehan_20.c src/logo_light.c)
 endif()
 
 

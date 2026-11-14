@@ -55,7 +55,7 @@
 
 #if LV_USE_STDLIB_MALLOC == LV_STDLIB_BUILTIN
 /** Size of the pool `lv_malloc()` allocates from. Needs to be at least 2kB (2048). */
-#define LV_MEM_SIZE (1024 * 1024)
+#define LV_MEM_SIZE (1024 * 1024 * 10)
 
 /** Place the pool at a fixed address instead of allocating it as a normal array.
  *  0: unused.
@@ -214,11 +214,11 @@
 #define LV_USE_SNAPSHOT 0
 
 /** Backend that gives the SW renderer vector graphics support. */
-#define LV_USE_THORVG 0
+#define LV_USE_THORVG 1
 
 #if LV_USE_THORVG
 /** Build the ThorVG copy shipped with LVGL instead of linking an external one. */
-#define LV_USE_THORVG_INTERNAL 1 
+#define LV_USE_THORVG_INTERNAL 1
 
 #endif /*LV_USE_THORVG*/
 
@@ -1178,7 +1178,7 @@
 #define LV_FONT_FMT_TXT_LARGE 0
 
 /** Compressed fonts */
-#define LV_USE_FONT_COMPRESSED 0
+#define LV_USE_FONT_COMPRESSED 1
 
 /** Draw a placeholder rectangle instead of nothing when a glyph is missing
  *  from the font.
