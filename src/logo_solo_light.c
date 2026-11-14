@@ -21,13 +21,13 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_LOGO_LIGHT
-#define LV_ATTRIBUTE_LOGO_LIGHT
+#ifndef LV_ATTRIBUTE_LOGO_SOLO_LIGHT
+#define LV_ATTRIBUTE_LOGO_SOLO_LIGHT
 #endif
 
 static const
-LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_LOGO_LIGHT
-uint8_t logo_light_map[] = {
+LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_LOGO_SOLO_LIGHT
+uint8_t logo_solo_light_map[] = {
 
     0x01,0x00,0x00,0x00,0x46,0x05,0x00,0x00,0x50,0x06,0x00,0x00,0x91,0x54,0x75,0x46,
     0xff,0xfe,0xfe,0xfe,0xff,0x25,0x25,0x25,0xff,0xb6,0xbd,0xb3,0xff,0x55,0x69,0x55,
@@ -118,7 +118,7 @@ uint8_t logo_light_map[] = {
 
 };
 
-const lv_image_dsc_t logo_light = {
+const lv_image_dsc_t logo_solo_light = {
   .header = {
     .magic = LV_IMAGE_HEADER_MAGIC,
     .cf = LV_COLOR_FORMAT_I2,
@@ -128,8 +128,8 @@ const lv_image_dsc_t logo_light = {
     .stride = 20,
     .reserved_2 = 0,
   },
-  .data_size = sizeof(logo_light_map),
-  .data = logo_light_map,
+  .data_size = sizeof(logo_solo_light_map),
+  .data = logo_solo_light_map,
   .reserved = NULL,
 };
 

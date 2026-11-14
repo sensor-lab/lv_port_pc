@@ -17,7 +17,7 @@
 #define TITLE_EN_POS_Y (106)
 
 LV_FONT_DECLARE(sourcehan_20);
-LV_IMAGE_DECLARE(logo_light);
+LV_IMAGE_DECLARE(logo_solo_light);
 
 int main(int argc, char **argv) {
   (void)argc;
@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
   lv_obj_set_style_bg_color(screen, lv_color_hex(0xFFFFFF), 0);
 
   lv_obj_t *logo = lv_image_create(screen);
-  lv_image_set_src(logo, &logo_light);
+  lv_image_set_src(logo, &logo_solo_light);
   lv_image_set_rotation(logo, 900);
   lv_obj_set_x(logo, LOGO_POS_X);
   lv_obj_set_y(logo, LOGO_POS_Y);
